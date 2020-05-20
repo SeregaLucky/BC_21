@@ -439,15 +439,19 @@
 //
 //
 /* Диструктуризация с иными именами переменных и присв */
-const perion1 = {
-  timeDT: 13,
-  name: 'Bob',
-};
+// const perion1 = {
+//   timeDT: 13,
+//   name: 'Bob',
+//   age: 30,
+// };
+// console.log(perion1.age);
 
-const { timeDT: time, name } = perion1;
-console.log('time --- ', time);
-console.log('name --- ', name);
-console.log('time --- ', timeDT);
+// const { timeDT: time, name, age: newAge = 20 } = perion1;
+// console.log('time --- ', time);
+// console.log('name --- ', name);
+// console.log('age --- ', newAge);
+// console.log('age --- ', age);
+// console.log('time --- ', timeDT);
 
 // console.log('============================');
 
@@ -456,15 +460,121 @@ console.log('time --- ', timeDT);
 /* Диструктуризация глубокая */
 // const perion1 = {
 //   time: 13,
-//   data11: {
+//   data: {
 //     x1: 3,
 //     z1: 10,
 //   },
 // };
 
+// const {
+//   time,
+//   data: { x1, z1 },
+// } = perion1;
+
+// console.log('time --- ', time);
+// console.log('x1 --- ', x1);
+// console.log('z1 --- ', z1);
+// // console.log('data --- ', data);
+
+//
+//
+//
+//
+
+// const perion1 = {
+//   time: 13,
+//   data: {
+//     x1: 3,
+//     z1: 10,
+//   },
+// };
+
+// const { time, data } = perion1;
+
+// console.log('time --- ', time);
+// console.log('data --- ', data);
+// console.log('x1 --- ', data.x1);
+// console.log('z1 --- ', data.z1);
+
+// //
+// //
+// //
+// //
+
+// const perion1 = {
+//   time: 13,
+//   data: {
+//     x1: 3,
+//     z1: 10,
+//   },
+// };
+
+// const { time, data } = perion1;
+
+// // const time = perion1.time;
+// // const data = perion1.data;
+
+// console.log('time --- ', time);
+// console.log('data --- ', data);
+
+// const { x1, z1 } = data;
+
+// console.log('x1 --- ', x1);
+// console.log('z1 --- ', z1);
+
+//
+//
+//
+//
+
+// const perion1 = {
+//   time: 13,
+//   data: {
+//     x1: 3,
+//     z1: 10,
+//   },
+// };
+// let { time, data } = perion1;
+
+// const perion2 = {
+//   time: 44,
+//   data: {
+//     x1: 7,
+//     z1: 9,
+//   },
+// };
+
+// let { time, data } = perion2;
+// const { time: time2, data: data2 } = perion2;
+
+// let a = 10;
+// let a = 20;
+
+//
+//
+//
+//
+// const arr = [
+//   { id: 1, text: 'Text111' },
+//   { id: 2, text: 'Text222' },
+//   { id: 3, text: 'Text333' },
+// ];
+
+// const [obj1, obj2, obj3] = arr;
+// console.log(obj1);
+// console.log(obj2);
+// console.log(obj3);
+
 /*
  * Диструктуризация массивов
  */
+// const arr = ['TEXT 111', 'TEXT 222', 'TEXT 333', 'TEXT 444'];
+
+// const [text1, text2, ...text3] = arr;
+
+// console.log(text1);
+// console.log(text2);
+// console.log(text3);
 
 // console.log('============================');
 
@@ -475,25 +585,39 @@ console.log('time --- ', timeDT);
 //   car: 2,
 // };
 
+// const entries = Object.entries(object3);
+// console.log('entries', entries);
+
+// for (const entry of entries) {
+//   console.log(entry);
+//   // console.log(entry[0]);
+//   // console.log(entry[1]);
+//   console.log('====================');
+// }
+
+// for (const [key, value] of entries) {
+//   // console.log(entry);
+//   console.log(key);
+//   console.log(value);
+//   console.log('====================');
+// }
+
 // console.log('============================');
 
 /*
  * Диструктуризация в параметрах функции
  */
 
-//
-//
-//
-//
-//
+// const show = ({ age: age111, name, time = 0 }) => {
+//   console.log(age111);
+//   console.log(name);
+//   console.log(time);
+// };
 
-/*
- * Задача.
- * 1. Даны два объетка. Объедините их вместе используе функцию
- */
+// show({ age: 22, name: 'Tom' });
 
-/*
- * Задача.
- * 1. Фун принимает объетка и возвращает все одной строкой
- */
-// const arr = ['Привет, ', 'мир', '!'];
+//
+//
+//
+//
+//
