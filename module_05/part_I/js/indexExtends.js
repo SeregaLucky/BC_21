@@ -1,17 +1,17 @@
 /* PersonDef - DEFAULT */
-// const PersonDef = function ({ name, xp }) {
-//   this.name = name;
-//   this.xp = xp;
-// };
+const PersonDef = function ({ name, xp }) {
+  this.name = name;
+  this.xp = xp;
+};
 
-// PersonDef.prototype.addXp = function (number) {
-//   this.xp += number;
-//   console.log('new XP', this.xp);
-// };
-// PersonDef.prototype.removeXp = function (number) {
-//   this.xp -= number;
-//   console.log('new XP', this.xp);
-// };
+PersonDef.prototype.addXp = function (number) {
+  this.xp += number;
+  console.log('new XP', this.xp);
+};
+PersonDef.prototype.removeXp = function (number) {
+  this.xp -= number;
+  console.log('new XP', this.xp);
+};
 
 // const alex = new PersonDef({ name: 'Alex', xp: 250 });
 // console.log(alex);
@@ -22,7 +22,7 @@
 //
 //
 
-/* PersonDef - DEFAULT */
+// /* PersonDef - DEFAULT */
 const PersonDef = function ({ name, xp }) {
   this.name = name;
   this.xp = xp;
@@ -70,14 +70,14 @@ alex.addPower(130);
 //
 //
 
-const poly = {
-  name: 'Poly',
-};
+// const poly = {
+//   name: 'Poly',
+// };
 
-const tom = poly;
+// const tom = poly;
 
-const fn1 = function () {
-  console.log(this);
-};
+// const fn1 = function () {
+//   console.log(this);
+// };
 
-fn1.call(tom);
+// fn1.call(tom);

@@ -195,6 +195,12 @@
 // const tom = new User({ name: 'Tom', status: 'student', cash: 500 });
 // console.log(tom);
 // tom.addCash(100);
+
+// (function (number) {
+//   tom.cash = tom.cash + number;
+//   console.log(tom.cash);
+// })(100);
+
 // tom.decCash(50);
 // tom.decCash(170);
 
@@ -264,6 +270,8 @@ User.fn1 = function () {
   console.log(111111);
 };
 
+// console.dir('User', User);
+
 // const optionCash = {
 //   INC: 'inc2',
 //   DEC: 'dec',
@@ -284,19 +292,19 @@ User.prototype.decCash = function (objCash) {
   console.log(this.cash);
 };
 
-console.dir(User);
+// console.dir(User);
 
-const tom = new User({ name: 'Tom', status: 'student', cash: 500 });
-console.log(tom);
-tom.addCash({ [User.optionCash.INC]: { selery: 100 } });
-tom.decCash({ [User.optionCash.DEC]: { food: 50 } });
-tom.decCash({ [User.optionCash.DEC]: { home: 170 } });
+// const tom = new User({ name: 'Tom', status: 'student', cash: 500 });
+// console.log(tom);
+// tom.addCash({ [User.optionCash.INC]: { selery: 100 } });
+// tom.decCash({ [User.optionCash.DEC]: { food: 50 } });
+// tom.decCash({ [User.optionCash.DEC]: { home: 170 } });
 
-const anna = new User({ status: 'work', cash: 900, name: 'Anna' });
-console.log(anna);
-anna.addCash({ [User.optionCash.INC]: { findMoney: 200 } });
-anna.decCash({ [User.optionCash.DEC]: { family: 70 } });
-anna.decCash({ [User.optionCash.DEC]: { fun: 270 } });
+// const anna = new User({ status: 'work', cash: 900, name: 'Anna' });
+// console.log(anna);
+// anna.addCash({ [User.optionCash.INC]: { findMoney: 200 } });
+// anna.decCash({ [User.optionCash.DEC]: { family: 70 } });
+// anna.decCash({ [User.optionCash.DEC]: { fun: 270 } });
 
 //
 //
