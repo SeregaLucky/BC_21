@@ -1,0 +1,12 @@
+{{#each this}}
+<li>
+  <p>Name: {{this.name}}</p>
+  <p>Is active: {{this.isActive}}</p>
+
+  <ul>
+    {{#each this.cars}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</li>
+{{/each}}
