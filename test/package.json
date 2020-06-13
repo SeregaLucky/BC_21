@@ -1,0 +1,30 @@
+{
+  "name": "module_09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "babel ./src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeregaLucky/BC_21_09_part_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeregaLucky/BC_21_09_part_1/issues"
+  },
+  "homepage": "https://github.com/SeregaLucky/BC_21_09_part_1#readme",
+  "dependencies": {
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "shortid": "^2.2.15"
+  }
+}
