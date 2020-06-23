@@ -1,0 +1,64 @@
+/* IMAGES */
+body {
+  background: darksalmon;
+}
+
+.fill {
+  background-image: url('https://source.unsplash.com/random/150x150');
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px orange;
+  transform: rotate(5deg);
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 3px salmon;
+  background: white;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+/* LISTS */
+.list {
+  background-color: #333;
+  padding: 1rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.3;
+  border: 3px solid orange;
+}
+
+/* 3 */
+.input_file {
+  display: none;
+}
+.label_file {
+  background-color: crimson;
+}

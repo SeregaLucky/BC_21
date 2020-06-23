@@ -2,7 +2,29 @@ import axios from 'axios';
 
 const baseURL = 'https://api.openweathermap.org/data/2.5';
 const apiKey = '175165a6952a2064d8eb4ea274c5f82f';
-// console.log(111);
+
+axios.defaults.baseURL = 'https://api.openweathermap.org/data/2.5';
+
+export const getWeather = async city => {
+  const res = await axios(`/weather?q=${city}&appid=${apiKey}`);
+  return res.data;
+};
+
+export const getWeatherFourDays = async city => {
+  const res = await axios(`/forecast?q=${city}&appid=${apiKey}`);
+  return res.data;
+};
+
+// export const getWeather = async city => {
+//   const res = await fetch(`${baseURL}/weather?q=${city}&appid=${apiKey}`);
+//   return res.json();
+// };
+
+// export const getWeather = () => {
+//   return fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`)
+//     .then(res => res.json())
+//     .catch(err => console.log(err));
+// };
 
 // const getWeather = () => {
 //   fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`)
@@ -65,38 +87,38 @@ const apiKey = '175165a6952a2064d8eb4ea274c5f82f';
 //
 //
 
-const getWeather = async () => {
-  const res = await fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`);
-  console.log(22, res);
+// const getWeather = async () => {
+//   const res = await fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`);
+//   console.log(22, res);
 
-  const res2 = await fetch(
-    `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
-  );
+//   const res2 = await fetch(
+//     `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
+//   );
 
-  const res2 = await fetch(
-    `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
-  );
-};
+//   const res2 = await fetch(
+//     `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
+//   );
+// };
 
-getWeather().then(data => console.log(data));
-console.log(111);
+// getWeather().then(data => console.log(data));
+// console.log(111);
 
 //
 //
 //
 //
 
-const getWeather = async () => {
-  fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`).then(() => {
-    const res2 = fetch(
-      `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
-    ).then(() => {
-      const res3 = fetch(
-        `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
-      );
-    });
-  });
-};
+// const getWeather = async () => {
+//   fetch(`${baseURL}/weather?q=Kiev&appid=${apiKey}`).then(() => {
+//     const res2 = fetch(
+//       `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
+//     ).then(() => {
+//       const res3 = fetch(
+//         `${baseURL}/forecast/hourly?q={city name}&appid=${apiKey}`,
+//       );
+//     });
+//   });
+// };
 
-getWeather().then(data => console.log(data));
-console.log(111);
+// getWeather().then(data => console.log(data));
+// console.log(111);
